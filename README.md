@@ -1,126 +1,144 @@
-# T20 World Cup Cricket Data Analysis Project
+🏏 T20 World Cup Cricket Data Analysis Project
+📌 Project Overview
+This project performs an in-depth analysis of T20 World Cup cricket data using a combination of Python, Power BI, and DAX. It provides statistical insights into match results, player performances, and team metrics, aimed at generating interactive dashboards and informed cricketing decisions.
 
-## Project Overview
-This project performs an in-depth analysis of T20 World Cup cricket data using various tools and technologies including Python, Power BI, and DAX. The analysis includes match results, player performances, and detailed statistical insights from T20 World Cup matches.
+🎯 Project Objectives
+Collect and clean T20 World Cup match and player data
 
-## Project Structure
-├── Cricket Best 11.pbix # Power BI dashboard for best playing XI analysis
-├── web_scrapping_codes.zip # Web scraping scripts for data collection
-├── t20_json_files.zip # Raw data in JSON format
-├── t20_csv_files.zip # Processed data in CSV format
-├── t20_data_preprocessing.ipynb # Jupyter notebook for data preprocessing
-├── t20_cric_1_power_query.pbix # Initial Power BI analysis with Power Query
-├── Stage-2.pbix # Second stage of Power BI analysis
-├── Stage-3.pbix # Final stage of Power BI analysis
-├── Parameter Scoping.pdf # Documentation for parameter configurations
-└── DAX Measures and Calculated columns.xlsx # DAX formulas and calculations
+Analyze match outcomes, team performance, and player statistics
 
-## Data Processing Workflow
+Visualize insights using Power BI dashboards
 
-### 1. Data Collection
-- Data was collected through web scraping (available in `web_scrapping_codes.zip`)
-- Raw data stored in JSON format (`t20_json_files.zip`)
+Generate a data-driven Best Playing XI
 
-### 2. Data Preprocessing
-The `t20_data_preprocessing.ipynb` notebook contains the following steps:
-- Data cleaning and transformation
-- Match results processing
-- Player statistics calculation
-- Data validation and quality checks
-- Export to CSV format for visualization
+Create custom DAX formulas for advanced cricket metrics
 
-### 3. Power BI Analysis
-The project includes multiple Power BI files for different aspects of analysis:
+Enable scalable and reproducible analytics workflows
 
-1. **Cricket Best 11.pbix**
-   - Analysis for selecting the best playing XI
-   - Player performance metrics
-   - Team statistics
+🛠️ Tools & Technologies Used
+Category	Tools / Languages
+Programming	Python 3.x
+Visualization	Power BI Desktop
+Data Modeling	DAX, Power Query
+Documentation	Excel, PDF
+Libraries	pandas, json, others
 
-2. **t20_cric_1_power_query.pbix**
-   - Initial data transformation using Power Query
-   - Basic visualizations and insights
+📂 Project Structure
+python
+Copy
+Edit
+├── Cricket Best 11.pbix                  # Power BI dashboard for best playing XI
+├── t20_cric_1_power_query.pbix           # Power BI with Power Query analysis
+├── Stage-2.pbix                          # Intermediate Power BI analytics
+├── Stage-3.pbix                          # Final, refined Power BI analytics
+├── t20_data_preprocessing.ipynb          # Jupyter notebook for data preprocessing
+├── t20_json_files.zip                    # Raw JSON data
+├── t20_csv_files.zip                     # Cleaned and processed CSV data
+├── web_scrapping_codes.zip               # Python scripts for data scraping
+├── DAX Measures and Calculated columns.xlsx  # Custom DAX calculations
+├── Parameter Scoping.pdf                 # Parameter configuration reference
+📈 Major Insights & Features
+Match Analysis
+Match-wise summaries
 
-3. **Stage-2.pbix & Stage-3.pbix**
-   - Progressive development of advanced analytics
-   - Complex visualizations
-   - Performance metrics and KPIs
+Win margins, venue stats, and winning trends
 
-### 4. DAX Implementation
-The `DAX Measures and Calculated columns.xlsx` file contains:
-- Custom DAX measures for cricket-specific calculations
-- Calculated columns for derived metrics
-- Performance indicators and statistical formulas
+Player Analysis
+Top batsmen and bowlers by format
 
-## Key Features
+All-rounder ranking system
 
-1. **Match Analysis**
-   - Detailed match results and statistics
-   - Team performance metrics
-   - Ground-wise analysis
-   - Win margins and patterns
+Historical performance comparisons
 
-2. **Player Performance Analysis**
-   - Batting statistics
-   - Bowling figures
-   - All-rounder performance metrics
-   - Player rankings and comparisons
+Team Analysis
+Head-to-head comparisons
 
-3. **Team Statistics**
-   - Team-wise performance analysis
-   - Head-to-head comparisons
-   - Tournament progression tracking
-   - Victory patterns and strategies
+Tournament progression patterns
 
-## Technical Stack
+Win strategies and tactics
 
-1. **Programming Languages & Tools**
-   - Python (Data Preprocessing)
-   - Power BI (Visualization and Analysis)
-   - DAX (Custom Calculations)
-   - Power Query (Data Transformation)
+Best XI Selection
+Data-driven selection using batting/bowling stats
 
-2. **Libraries Used**
-   - Pandas (Data manipulation)
-   - JSON (Data parsing)
-   - Other Python libraries for data processing
+Context-aware ranking for ideal team composition
 
-## Data Sources
-- Match results and statistics
-- Player performance data
-- Tournament-specific information
-- Ground and venue details
+📥 Data Sources
+Official T20 World Cup match reports
 
-## Visualization Outputs
-The project includes various visualizations such as:
-- Match summary dashboards
-- Player performance charts
-- Team comparison visualizations
-- Tournament statistics
-- Best XI selection metrics
+Player statistics via web scraping
 
-## Parameter Configuration
-Refer to `Parameter Scoping.pdf` for detailed information about:
-- Analysis parameters
-- Calculation thresholds
-- Filtering criteria
-- Performance metrics
+Venue and ground metadata
 
-## Future Enhancements
-Potential areas for project expansion:
-1. Real-time data integration
-2. Advanced predictive analytics
-3. Player form trajectory analysis
-4. Historical tournament comparisons
+JSON format (raw) and CSV format (processed)
 
-## Usage Instructions
-1. Start with the preprocessing notebook (`t20_data_preprocessing.ipynb`)
-2. Review the processed data in CSV format
-3. Open Power BI files in sequence for progressive analysis
-4. Refer to DAX measures file for calculation details
+🔧 Data Processing Workflow
+1. Data Collection
+Web scraping scripts (web_scrapping_codes.zip)
 
-## Dependencies
-- Python 3.x
-- Power BI Desktop
-- Required Python libraries (pandas, json)
-- Microsoft Excel (for DAX measures reference)
+JSON files of raw match data
+
+2. Data Preprocessing
+Run t20_data_preprocessing.ipynb
+
+Includes data cleaning, validation, and export to CSV
+
+3. Power BI Visualizations
+Load CSVs into Power BI files:
+
+t20_cric_1_power_query.pbix for early exploration
+
+Stage-2.pbix for detailed metrics
+
+Stage-3.pbix for final dashboards
+
+4. DAX Implementation
+Refer to DAX Measures and Calculated columns.xlsx for:
+
+Custom cricket metrics
+
+Advanced performance KPIs
+
+Calculated columns
+
+⚙️ Setup Instructions
+Clone or download the repository.
+
+Install Python 3.x and the following packages:
+
+bash
+Copy
+Edit
+pip install pandas
+Run t20_data_preprocessing.ipynb to generate CSVs.
+
+Open .pbix files in Power BI Desktop.
+
+Use Excel to review DAX measures (if modifying or expanding).
+
+📊 Visualization Samples
+Match dashboards with win/loss stats
+
+Player cards with batting/bowling graphs
+
+Team heatmaps
+
+Best XI radar charts
+
+⚙️ Parameter Configuration
+Defined in Parameter Scoping.pdf:
+
+Thresholds for performance inclusion
+
+Metrics for best player/team selection
+
+Filters for match conditions
+
+🔮 Future Enhancements
+Integrate live match APIs
+
+Predictive modeling using player trends
+
+Compare historical vs current tournaments
+
+Expand to include ODI or Test World Cups
+
