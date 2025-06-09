@@ -69,69 +69,124 @@ This project performs an in-depth analysis of **T20 World Cup cricket data** usi
 
 ---
 
+
+---
+
 ## 📥 Data Sources
-- Official T20 World Cup match reports
-- Player statistics via web scraping
-- Venue and ground metadata
+- Match records from official T20 World Cup sources
+- Player statistics scraped and structured via Python scripts
+- Venue-specific performance data
+- JSON (raw) and CSV (cleaned) formats
 
 ---
 
 ## 🔧 Data Processing Workflow
 
-### 1. Data Collection
-- Web scraping scripts (`web_scrapping_codes.zip`)
-- JSON files of raw match data
+### Step 1: Data Collection
+- Web scraping via Python (`web_scrapping_codes.zip`)
+- Raw JSON datasets
 
-### 2. Data Preprocessing
-- Run `t20_data_preprocessing.ipynb`
-- Includes data cleaning, validation, and export to CSV
+### Step 2: Preprocessing
+- Run `t20_data_preprocessing.ipynb` for:
+  - Cleaning
+  - Feature engineering
+  - CSV export
 
-### 3. Power BI Visualizations
-- Load CSVs into Power BI files:
-  - `t20_cric_1_power_query.pbix`
+### Step 3: Power BI Dashboards
+- Use `.pbix` files for visual exploration:
+  - `Cricket Best 11.pbix`
   - `Stage-2.pbix`
   - `Stage-3.pbix`
 
-### 4. DAX Implementation
-- Refer to `DAX Measures and Calculated columns.xlsx`
+### Step 4: DAX Implementation
+- Refer to `DAX Measures and Calculated columns.xlsx` for:
+  - Custom metrics
+  - Calculated columns
+  - KPIs
+
+---
+
+## 📈 Visualizations
+
+All Power BI dashboards were created with an emphasis on:
+- Clarity and accessibility
+- KPI alignment
+- Interactive filtering for teams, players, and venues
+
+### ✅ Visualization Objectives:
+1. **Match Summary Dashboards**  
+   - Win/loss breakdowns  
+   - Toss effect  
+   - Victory margins  
+
+2. **Player Performance Charts**  
+   - Top batsmen and bowlers  
+   - All-rounder consistency  
+   - Strike rate and economy rate filters  
+
+3. **Team vs Team Comparisons**  
+   - Head-to-head win ratios  
+   - Tournament journey tracking  
+
+4. **Best XI Selection**  
+   - Metric-based selection  
+   - Batting vs bowling balance  
+
+5. **Venue Analysis**  
+   - Win % by location  
+   - Pitch performance  
+
+All visualizations were built using **Power BI** and labeled with filters and legends for user interactivity.
+
+---
+
+## 🌐 Upload to GitHub
+
+This repository includes:
+- Power BI `.pbix` files (`Stage-3.pbix`, `Cricket Best 11.pbix`)
+- Source code for scraping and preprocessing (`.ipynb`, `.zip`)
+- Cleaned and raw datasets (`.csv`, `.json`)
+- DAX formulas (`.xlsx`)
+- This interactive README documentation
+
+✅ **To interact with the visualizations:**
+1. Clone/download this repo
+2. Open `.pbix` files in **Power BI Desktop**
+3. Use the slicers and filters to explore various metrics
+4. Review the **README** and `Parameter Scoping.pdf` for logic behind dashboards
 
 ---
 
 ## ⚙️ Setup Instructions
 
-1. Clone or download the repository.
-2. Install **Python 3.x** and required libraries:
-   ```bash
-   pip install pandas
-Run t20_data_preprocessing.ipynb
+```bash
+# Clone the repo
+git clone https://github.com/<your-username>/t20-worldcup-analysis.git
 
-Open .pbix files using Power BI Desktop.
+# Install Python dependencies
+pip install pandas json
+Then:
 
-Open Excel for DAX measure reference.
+Open t20_data_preprocessing.ipynb in Jupyter
 
-📊 Visualization Samples
-Match dashboards
+Run preprocessing steps to regenerate .csv files (optional)
 
-Player graphs
+Launch .pbix files in Power BI Desktop
 
-Team comparisons
+🧪 Parameter Configuration
+Refer to Parameter Scoping.pdf for:
 
-Best XI visual analytics
+Filters (overs, strike rates, wickets)
 
-⚙️ Parameter Configuration
-See Parameter Scoping.pdf for:
+Thresholds for inclusion
 
-Thresholds
-
-Filters
-
-Metrics
+Custom metrics definitions
 
 🔮 Future Enhancements
-Live match data integration
+Real-time API integration for live matches
 
-Predictive modeling
+Predictive analytics (e.g., win probability)
 
-Cross-tournament analysis
+Player form trajectory dashboards
 
-ODI and Test format support
+Tournament evolution across years
